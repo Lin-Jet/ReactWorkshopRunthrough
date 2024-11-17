@@ -5,11 +5,12 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  z-index: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 5s linear alternate;
   }
 }
 
@@ -30,9 +31,23 @@
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: scale(100%);
+    filter: hue-rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(200%);
+    filter: hue-rotate(360deg);
   }
+}
+
+
+
+.CoolButton{
+  background: linear-gradient(130deg, pink, orange, purple);
+  z-index: 1;
+}
+
+.Griddy .css-1588512-MuiButtonBase-root-MuiButton-root {
+  border: hotpink solid 1px;
+  color: black;
 }
